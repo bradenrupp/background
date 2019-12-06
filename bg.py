@@ -6,7 +6,7 @@ import time
 
 
 def change_bg():
-    pathToBmp = os.path.normpath("C:/Users/r349324/Desktop/bg.bmp")
+    pathToBmp = os.path.normpath("C:/.bg.bmp")
     SPI_SETDESKTOPWALLPAPER = 20
     ctypes.windll.user32.SystemParametersInfoW(
         SPI_SETDESKTOPWALLPAPER, 0, pathToBmp, 0)
