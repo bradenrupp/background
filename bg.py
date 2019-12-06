@@ -7,7 +7,7 @@ import time
 
 def change_bg():
     pathToBmp = os.path.normpath("C:/Users/Public/.bg.bmp")
-    echo $pathToBmp
+    print(pathToBmp)
     SPI_SETDESKTOPWALLPAPER = 20
     ctypes.windll.user32.SystemParametersInfoW(
         SPI_SETDESKTOPWALLPAPER, 0, pathToBmp, 0)
